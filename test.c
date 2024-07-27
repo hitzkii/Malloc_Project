@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
      
      free->s.i = 1;
      
-     printf("%d\n",free->s.i);
-     //printf("%d\n",free->b);
+     printf("%x\n",&free->s.i);
+     printf("%x\n",&free->b);
      return 0;
 }
