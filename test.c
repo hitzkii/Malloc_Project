@@ -11,10 +11,10 @@ int main (int argc, char *argv[])
     typedef union lol head;
     head *free;
     free = malloc(sizeof(union lol));
-     
+    
      free->s.i = 1;
-     
-     printf("%x\n",&free->s.i);
-     printf("%x\n",&free->b);
+      free->b = 'a';
+     printf("%d\n",free->s.i);
+     printf("%c\n",free->b);
      return 0;
 }
