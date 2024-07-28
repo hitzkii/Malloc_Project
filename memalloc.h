@@ -1,4 +1,7 @@
+#pragma once
 #include "stdio.h"
+#include <pthread.h>
+#include "unistd.h"
 typedef char ALIGN[16];
 
 union header {
