@@ -13,3 +13,4 @@ union header {
 	ALIGN stub;
 };
 typedef union header header_t;
+header_t *get_free_block(size_t size);
